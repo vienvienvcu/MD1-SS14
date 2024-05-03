@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form>
+        <input type="text" value="search" placeholder="search" >
+    </form> -->
+    <script>
+        let str = prompt("tim kiem")
+        let english = ["book", "ruler","pen"]
+        let vietnam = ["sach", "thước", "bút"]
+        // let result = [];
+        let vt = english.indexOf(str)
+        if (vt != -1){
+            console.log(vietnam[vt]);
+        } else {
+            console.log("ko thay");
+        }
+    </script>
+</body>
+</html>

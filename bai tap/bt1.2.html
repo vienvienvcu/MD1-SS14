@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Phương indexOf()thức trả về vị trí xuất hiện đầu tiên của một giá trị trong chuỗi.
+
+        // Phương indexOf()thức trả về -1 nếu không tìm thấy giá trị.
+
+        // Phương pháp này indexOf()phân biệt chữ hoa chữ thường.
+
+        // Viết một chương trình nhận một số nhập vào và chèn dấu (_) giữa 2 số chẵn.
+        let n = prompt("nhap vao mot day so ngan cach nhau boi dau phay");
+        let convert = n.split(",");
+        console.log(convert)
+        // duyet qua cac phan tu mang
+        // xet cac phan tu neu phan tu chia het cho 2 
+        var result = [convert[0]];
+        for(let i = 0 ; i< convert.length; i++){
+            if(convert[i] % 2 === 0 && convert[i-1] % 2 === 0){
+             result.push('-',convert[i]);
+            }else{
+             result.push(convert[i]);
+            }
+        }
+        console.log(result.join(''));
+    </script>
+</body>
+</html>

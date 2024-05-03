@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let n = prompt("nhap vao mot chuoi bat ki")
+        // // chuyển các ký tự chữ thường trong chuỗi vừa nhập 
+        // // sang thành dạng chữ hoa.
+        // var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        // var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        // // let  array = n.split();
+        // var result = [];
+        // for (let i = 0; i < n.length; i++) {
+        //     if(UPPER.indexOf(n[i]) !== -1){
+        //         result.push(n[i].toLowerCase());
+        //     }else if(LOWER.indexOf(n[i]) !== -1){
+        //         result.push(n[i].toUpperCase());
+        //     }else{
+        //         result.push(n[i]);
+        //     }
+        // }
+        // console.log(result.join(''));
+// nguoi dung nhap vao 1 chuoi bat ki
+var str = prompt("nhap day so bat ki")
+
+// Xác định các hằng số cho chữ hoa và chữ thường
+var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+
+// Khởi tạo một mảng để lưu trữ kết quả
+var result = [];
+
+// Lặp lại qua từng ký tự trong chuỗi đầu vào
+for (var x = 0; x < str.length; x++) {
+  // Kiểm tra xem ký tự hiện tại có phải là chữ in hoa không
+  if (UPPER.indexOf(str[x]) !== -1) {
+    // Chuyển đổi chữ hoa thành chữ thường và thêm nó vào mảng kết quả
+    result.push(str[x].toLowerCase());
+  }
+  // Check if the current character is a lowercase letter
+  else if (LOWER.indexOf(str[x]) !== -1) {
+    //Kiểm tra xem ký tự hiện tại có phải là chữ thường không
+    result.push(str[x].toUpperCase());
+  }
+  // Nếu ký tự hiện tại không phải là chữ hoa hay chữ thường, hãy thêm nó vào mảng kết quả 
+  else {
+    result.push(str[x]);
+  }
+}
+
+// Output the joined result array as a string
+console.log(result.join(''));
+
+    </script>
+</body>
+</html>

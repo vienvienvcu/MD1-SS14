@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÌM GIÁ TRỊ TRONG MẢNG</title>
+</head>
+<body>
+    <script>
+        //tao mang
+        let array = [1,2,3,4,5,6]
+        // Cho người dùng nhập vào giá trị của biến n qua prompt
+        let n = prompt("nhap vao mot so bat ky");
+        // kiem tra bien n co trung voi gia tri voi phan tu trong mang 
+        // su dung cau lenh if else
+
+        let check = false;
+        for( let i = 0; i<array.length; i++){
+            if(n == array[i]){
+                check = true;
+            }
+        }
+         // hien thi mang
+         if (check == true) {
+            console.log("bingo");   
+         }else{
+            console.log("chuc b may man lan sau");
+         }
+
+    </script>
+</body>
+</html>

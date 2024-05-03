@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÌM PHẦN TỬ LỚN NHẤT TRONG MẢNG</title>
+</head>
+<body>
+    <script>
+        let a = prompt("nhap vao day so bat ky ngan cach nhau boi dau phay");
+        let convert = a.split(",");
+        console.log("Chuyển đổi string sang array", convert);
+        let max = convert[0];
+        
+        for (let i = 0; i < convert.length; i++){
+            if(max < convert[i]){
+                max = convert[i]
+            }
+        }
+        console.log(max);
+        // VD: -89,57,-20,36,24,75
+
+    </script>
+</body>
+</html>

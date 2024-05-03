@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐẢO NGƯỢC CÁC PHẦN TỬ TRONG MẢNG</title>
+</head>
+<body>
+    <script>
+        // split() de chuyen doi kieu du lieu string sang array
+        let n = prompt("nhap vao day mot so bat ki duoc ngan cach boi dau ,");
+        let convert = n.split(",")
+        console.log("chuyen doi string sang array", convert);
+        // su dung vong lap for de dao nguoc cac phan tu trong mang
+        // tao mot mang rong de luu tru gia tri ma  nguoi dung nhap tu ban phim
+        // let array = [];
+        // for(i = convert.length-1; i>=0; i-- ){
+        //     array.push(convert[i]);
+        //     console.log("Đảo ngược các phần tử", array);
+        // }
+        convert.reverse();
+        console.log(convert);
+    </script>
+</body>
+</html>
